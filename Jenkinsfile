@@ -15,7 +15,7 @@ pipeline{
                 sudo mkdir html
                 cd html
                 sudo git init
-                sudo git remote add https://github.com/Fearreece/webhook.git
+                sudo git remote add origin https://github.com/Fearreece/webhook.git
                 sudo git pull origin main
                 '''
             }
