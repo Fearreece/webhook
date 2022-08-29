@@ -14,8 +14,9 @@ pipeline{
                 sudo rm -rf html
                 sudo mkdir html
                 cd html
-                sudo touch index.html
-                sudo echo 'This is a jenkins project' > index.html
+                sudo git init
+                sudo git remote add https://github.com/Fearreece/webhook.git
+                sudo git pull origin main
                 '''
             }
         }
