@@ -8,14 +8,12 @@ pipeline{
         }
         stage('Test'){
             steps{
-                echo('This is the test stage')
+                sh '''
+                sudo ssh -i /var/lib/jenkins/jenkins.pem -t  ubuntu@ec2-44-204-16-109.compute-1.amazonaws.com
+                '''
             }
         }
-        stage('Deploy'){
-            steps{
-                echo('This is the deployment stage')
-            }
-        }
+
     
     }
 }
